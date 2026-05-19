@@ -30,7 +30,7 @@ const FilmPage = () => {
     }, []); 
 
     if(loading){
-        <h1> Cargando... </h1>
+        return (<h1> Cargando... </h1>); 
     }
 
     return (
