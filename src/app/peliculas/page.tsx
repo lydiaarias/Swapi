@@ -13,7 +13,7 @@ const FilmPage = () => {
 
     const fetchFilm = () => {
         try{
-            api.get('/films').then((e) => {
+            api.get(`/films`).then((e) => {
                 const {data}: {data: FilmT[]} = e; 
                 setResultFilm(data); 
             }).finally(() => {

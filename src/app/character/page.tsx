@@ -15,7 +15,7 @@ const CharacterPage = () => {
     
     const fetchCharacter = () => {
         try{
-            api.get('/people').then((e) => {
+            api.get(`/people`).then((e) => {
                 const {data}: {data: PersonajeT[]} = e; 
                 setResulCharacter(data); 
             }).finally(() => {
